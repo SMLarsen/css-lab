@@ -1,0 +1,10 @@
+section {
+  border: 1px solid grey;
+  margin: 5px 0 5px 0;
+}
+
+
+img {
+  height: 200px;
+  border: 1px solid grey;
+}
