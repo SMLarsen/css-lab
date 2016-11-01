@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+  $('input[name=buttonReset]').on('click', function (event) {
+    event.preventDefault();
+    $('section').children().removeClass();
+    $('section').children().css('border-color', '');
+    $('section').children().css('border-style', '');
+    $('section').children().css('border-width', '');
+    $('section').children().css('margin', '');
+    $('section').children().css('padding', '');
+    $('section').children().css('float', '');
+    $('section').children().css('display', '');
+  });
+
   $('input[name=border-style]').on('click change', function (event) {
     event.preventDefault();
     var value = $(this).parent().find("input[name=border-style]:checked").val();
@@ -45,7 +57,7 @@ $(document).ready(function () {
 
     $('input[name=animate]').on('click change', function (event) {
       event.preventDefault();
-      $('section').children().removeClass('');
+      $('section').children().removeClass();
       var value = $(this).parent().find("input[name=animate]:checked").val();
       var setClass = 'animated ' + value;
       $('section').children().addClass(setClass);
