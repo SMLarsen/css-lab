@@ -43,4 +43,12 @@ $(document).ready(function () {
       $('section').children().css('display', value);
     });
 
+    $('input[name=animate]').on('click change', function (event) {
+      event.preventDefault();
+      $('section').children().removeClass('');
+      var value = $(this).parent().find("input[name=animate]:checked").val();
+      var setClass = 'animated ' + value;
+      $('section').children().addClass(setClass);
+    });
+
 });

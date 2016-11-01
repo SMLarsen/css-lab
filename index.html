@@ -4,6 +4,7 @@
 <head>
     <title>HTML & CSS</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
     <script type="text/javascript" src="../vendor/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
 
@@ -16,11 +17,7 @@
         <div class="configType">
           <label for="favcolor">Color</label><br>
           <input type="color" name="favcolor" value="#ff0000"> <br>
-          <!-- <input type="color" name="border-color" value="#ff0000"><br> -->
-          <!-- <label for="border-color">Color</label><br>
-          <input type="radio" name="border-color" value="red">Red<br>
-          <input type="radio" name="border-color" value="green">Green<br>
-          <input type="radio" name="border-color" value="blue">Blue<br> -->
+
         </div>
         <div class="configType">
           <label for="border thickness">Width</label>
@@ -32,7 +29,6 @@
           <input type="radio" name="border-style" value="dashed">Dashed<br>
           <input type="radio" name="border-style" value="solid">Solid<br>
           <input type="radio" name="border-style" value="double">Double<br>
-          <input type="radio" name="border-style" value="grooved">Grooved<br>
           <input type="radio" name="border-style" value="ridge">Ridge<br>
           <input type="radio" name="border-style" value="inset">Inset<br>
           <input type="radio" name="border-style" value="outset">outset<br>
@@ -59,13 +55,20 @@
           <input type="radio" name="display" value="flex">Flex<br>
           <input type="radio" name="display" value="inline-flex">Inline-flex<br>
         </div>
+      <div class="configType">
+        <label for="animate">Animate</label> <br>
+        <input type="radio" name="animate" value="bounce">Bounce<br>
+        <input type="radio" name="animate" value="flash">Flash<br>
+        <input type="radio" name="animate" value="rubberBand">Rubber Band<br>
+        <input type="radio" name="animate" value="jello">Jello<br>
+      </div>
       </form>
     </aside>
     <main>
 
         <section>
             <h1>Heading 1</h1>
-            <img src="sigmaLogo.png" alt="sigma logo" />
+            <img src="sigmaLogo.png" class="animate fadein" alt="sigma logo" />
             <h2>Heading 2</h2>
             <h3>Heading 3</h3>
             <h4>Heading 4</h4>
@@ -77,7 +80,7 @@
                 <li>li</li>
                 <li>li</li>
             </ul>
-            <button type="button" name="buttonBase">Button</button>
+            <button type="button" name="buttonBase" class="animate fadein">Button</button>
         </section>
     </main>
 
