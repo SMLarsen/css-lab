@@ -1,33 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>HTML & CSS</title>
-  <link rel="stylesheet" href="style.css" />
-  <script type="text/javascript" src="../vendor/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+    <title>HTML & CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="../vendor/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
 </head>
-<body>
-  <section id="base">
-    <h1>(Nearly) Default</h1>
-  <img src="sigmaLogo.png" alt="sigma logo" />
-  <h2>Heading 2</h2>
-  <h3>Heading 3</h3>
-  <h4>Heading 4</h4>
-  <p>
-    Paragraph
-  </p>
-  <ul>
-    <li>li</li>
-    <li>li</li>
-    <li>li</li>
-  </ul>
-  </section>
 
-  <section id="base">
-    <h1>(Nearly) Default</h1>
-  <img src="sigmaLogo.png" alt="sigma logo" />
-  </section>
+<body>
+    <aside class="configure">
+      <form class="configForm" action="index.html" method="post">
+
+        <div class="configType">
+          <label for="favcolor">Color</label><br>
+          <input type="color" name="favcolor" value="#ff0000"> <br>
+          <!-- <input type="color" name="border-color" value="#ff0000"><br> -->
+          <!-- <label for="border-color">Color</label><br>
+          <input type="radio" name="border-color" value="red">Red<br>
+          <input type="radio" name="border-color" value="green">Green<br>
+          <input type="radio" name="border-color" value="blue">Blue<br> -->
+        </div>
+        <div class="configType">
+          <label for="border thickness">Width</label>
+          <input type="number" name="border-width" value="2" min="0" max="25"><br>
+        </div>
+        <div class="configType">
+          <label for="border-style">Style</label> <br>
+          <input type="radio" name="border-style" value="dotted">Dotted<br>
+          <input type="radio" name="border-style" value="dashed">Dashed<br>
+          <input type="radio" name="border-style" value="solid">Solid<br>
+          <input type="radio" name="border-style" value="double">Double<br>
+          <input type="radio" name="border-style" value="grooved">Grooved<br>
+          <input type="radio" name="border-style" value="ridge">Ridge<br>
+          <input type="radio" name="border-style" value="inset">Inset<br>
+          <input type="radio" name="border-style" value="outset">outset<br>
+          <input type="radio" name="border-style" value="none">None<br>
+        </div>
+        <div class="configType">
+          <label for="margin">Margin</label> <br>
+          <input type="number" name="margin" value="0"><br>
+        </div>
+        <div class="configType">
+          <label for="padding">Padding</label> <br>
+          <input type="number" name="padding" value="0"><br>
+        </div>
+        <div class="configType">
+          <label for="float">Float</label> <br>
+          <input type="radio" name="float" value="left">Left<br>
+          <input type="radio" name="float" value="right">Right<br>
+          <input type="radio" name="float" value="none">None<br>
+        </div>
+        <div class="configType">
+          <label for="display">Display</label> <br>
+          <input type="radio" name="display" value="block">Block<br>
+          <input type="radio" name="display" value="inline-block">Inline-block<br>
+          <input type="radio" name="display" value="flex">Flex<br>
+          <input type="radio" name="display" value="inline-flex">Inline-flex<br>
+        </div>
+      </form>
+    </aside>
+    <main>
+
+        <section>
+            <h1>Heading 1</h1>
+            <img src="sigmaLogo.png" alt="sigma logo" />
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <p>
+                Paragraph
+            </p>
+            <ul>
+                <li>li</li>
+                <li>li</li>
+                <li>li</li>
+            </ul>
+            <button type="button" name="buttonBase">Button</button>
+        </section>
+    </main>
 
 </body>
 

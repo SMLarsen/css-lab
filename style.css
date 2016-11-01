@@ -1,3 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+
+aside {
+  float: left;
+  width: 13%;
+  height: 100%;
+  background-color: lightgrey;
+  padding: 0 10px 0 10px;
+  margin-right: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+
+main {
+  float: left;
+  width: 84%;
+  border: 1px solid grey;
+}
+
 section {
   border: 1px solid grey;
   margin: 5px 0 5px 0;
@@ -6,5 +29,10 @@ section {
 
 img {
   height: 200px;
-  border: 1px solid grey;
+}
+
+.configType {
+  border-top: 1px solid grey;
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
